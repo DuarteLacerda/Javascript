@@ -1,28 +1,28 @@
 # JavaScript ⚡  
 Personal project – Just for fun and learning
 
-**JavaScript Playground** é um repositório pessoal onde reúno exercícios de programação e pequenos projetos feitos com JavaScript. O principal objetivo é praticar lógica, reforçar conceitos fundamentais da linguagem e explorar as possibilidades que o JavaScript oferece no desenvolvimento web.
+**JavaScript Playground** is a personal repository where I collect programming exercises and small projects developed in JavaScript. The main goal is to practice logic, reinforce core language concepts, and explore the possibilities JavaScript offers for web development.
 
-Este projeto não está ligado a nenhum curso ou trabalho académico — foi criado por iniciativa própria como espaço de experimentação e aprendizagem contínua.
+This project is not linked to any course or academic work — it was created solely on my own initiative as a space for experimentation and continuous learning.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Technologies Used
 - JavaScript (ES6+)
-- HTML5 e CSS3 (para projetos interativos)
-- APIs nativas do navegador (DOM, LocalStorage, etc.)
+- HTML5 and CSS3 (for interactive projects)
+- Native browser APIs (DOM manipulation, LocalStorage, etc.)
 
 ---
 
-## 💡 Conteúdo
-- Exercícios de lógica, manipulação de arrays e objetos  
-- Mini projetos web (To-do list, cronómetros, validadores, etc.)  
-- Interações com o DOM e elementos visuais básicos
+## 💡 Content
+- Logic exercises, array and object manipulation  
+- Small web projects (To-do lists, timers, validators, etc.)  
+- DOM interactions and basic UI elements
 
 ---
 
-## 🚀 Como correr os projetos
-1. Clona o repositório:
+## 🚀 How to run the projects
+1. Clone the repository:
 ```bash
 git clone https://github.com/DuarteLacerda/JavaScript.git
 cd JavaScript
