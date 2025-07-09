@@ -87,8 +87,12 @@ function controlCronometer(action) {
 // Listen for space key to start the timer
 document.addEventListener("keydown", (e) => {
   if (e.code === "Space") {
-    controlCronometer("start");
-    e.preventDefault();
+    if (cronometerInterval) {
+      controlCronometer("stop");
+    } else {
+      controlCronometer("start");
+      e.preventDefault();
+    }
   }
 });
 
