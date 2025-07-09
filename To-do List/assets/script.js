@@ -58,3 +58,10 @@ function newElement() {
     };
   }
 }
+
+// Allow pressing Enter to add a new item
+document.getElementById("myInput").addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    newElement();
+  }
+});

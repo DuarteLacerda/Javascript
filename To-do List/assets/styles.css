@@ -10,9 +10,9 @@
     display: flex;
     justify-content: center;
     align-items: end;
+    position: sticky;
     width: 100%;
     text-align: center;
-    margin-top: 250px;
     padding: 10px;
 }
 
@@ -45,7 +45,8 @@
     height: 100%;
     border-radius: 50px;
     transition: all 0.6s ease-out;
-    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
 }
 
 .top {
@@ -213,7 +214,7 @@ ul li.checked::before {
 
 /* Style the header */
 .header {
-    background-color: #f44336;
+    background-color: #f5574c;
     padding: 30px 30px;
     color: white;
     text-align: center;
