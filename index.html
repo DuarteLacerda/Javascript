@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+    <title>My JavaScript Projects | Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <div class="toggle-switch" onclick="toggleTheme()">
+            <div class="toggle-slider" id="toggleIcon">☀️</div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="page-wrapper">
+        <div class="container">
+            <h1 class="main-title text-center">My JavaScript Projects</h1>
+            <p class="subtitle text-center">A collection of interactive web applications</p>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="Basic Calculator/calc.html" class="project-card">
+                        <div class="project-icon">🧮</div>
+                        <h2 class="card-title">Basic Calculator</h2>
+                        <p class="card-text">A simple calculator with basic operations</p>
+                        <span class="project-tag">JavaScript</span>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="Digital Clock/digi-clock.html" class="project-card">
+                        <div class="project-icon">🕐</div>
+                        <h2 class="card-title">Digital Clock</h2>
+                        <p class="card-text">Real-time digital clock</p>
+                        <span class="project-tag">JavaScript</span>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="To-do List/to-do-list.html" class="project-card">
+                        <div class="project-icon">✅</div>
+                        <h2 class="card-title">To-do List</h2>
+                        <p class="card-text">Interactive task list</p>
+                        <span class="project-tag">JavaScript</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Carregar preferência salva ou usar dark mode por padrão
+        const savedTheme = localStorage.getItem('theme');
+        const toggleIcon = document.getElementById('toggleIcon');
+
+        // Se não houver preferência salva, usar dark mode (padrão)
+        if (savedTheme === 'light') {
+            document.body.classList.add('light-mode');
+            toggleIcon.textContent = '☀️';
+        } else {
+            // Dark mode por padrão
+            toggleIcon.textContent = '🌙';
+            if (!savedTheme) {
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+            const isLight = document.body.classList.contains('light-mode');
+
+            // Atualizar ícone
+            toggleIcon.textContent = isLight ? '☀️' : '🌙';
+
+            // Salvar preferência
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        }
+    </script>
+</body>
+
+</html>
