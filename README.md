@@ -28,7 +28,7 @@ git clone https://github.com/DuarteLacerda/JavaScript.git
 cd JavaScript
 ```
 
-## ⚠️ Disclaier
+## ⚠️ Disclaimer
 This repository was created for educational and recreational purposes only. It is not intended to be a final or commercial product. Some projects may be unfinished or simplified.  
 
 ## 👤 Author  
